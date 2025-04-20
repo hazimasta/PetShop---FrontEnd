@@ -110,17 +110,18 @@ body {
 
 .categories-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas fijas */
+    grid-template-columns: 1fr 1fr 1fr; 
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .prod-card {
-    background-color: #f1f1f1;
+    background-color: #ffffff;
     border-radius: 15px;
     padding: 20px;
     transition: transform 0.3s;
+    box-shadow: 0 0 20px rgba(156, 156, 156, 0.603);
 }
 
 .prod-card img {
