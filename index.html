@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Petshop - Global Academy</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">FrontCat&Dog</div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <!--para esto segui un tuto jej-->
+            <div class="lenguaje">
+                <select>
+                    <option value="es">ES</option>
+                    <option value="en">EN</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Bienvenidos a FrontCat&Dog Petshop</h1>
+            <p>🐱 Lo mejor, para los mejores. 🐶</p>
+            <a href="#categorias" class="btn">Ver productos</a>
+        </div>
+    </section>
+
+    <section class="productos" id="productos">
+        <div class="container">
+            <h2>Nuestros Productos</h2>
+            <div class="categories-grid">
+
+                <div class="prod-card">
+                    <img src="/img/comida.jpg" alt="Alimentos">
+                    <p>Alimentos</p>
+                </div>
+
+                <div class="prod-card">
+                    <img src="/img/juguetes.jpg" alt="Juguetes">
+                    <p>Juguetes</p>
+                </div>
+
+                <div class="prod-card">
+                    <img src="/img/accesorios.jpg" alt="Accesorios">
+                    <p>Accesorios</p>
+                </div>
+                
+                <div class="prod-card">
+                    <img src="/img/higiene.png" alt="Higiene">
+                    <p>Higiene</p>
+                </div>
+
+                <div class="prod-card">
+                    <img src="img/salud.webp" alt="Salud">
+                    <p>Salud</p>
+                </div>
+
+                <div class="prod-card">
+                    <img src="img/ropa.jpg" alt="Ropa">
+                    <p>Ropa</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="contacto">
+        <h2>Contacto</h2>
+        <form class="formulario" action="#">
+            <div class="input-form">
+                <label for="nombre">Nombre y Apellido</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="input-form">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="input-form">
+                <label for="telefono">Número de Contacto</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+
+            <div class="form-buttons">
+                <button type="reset" class="btn-reset">Resetear</button>
+                <button type="submit" class="btn-submit">Enviar</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="about" id="nosotros">
+        <div class="container">
+            <h2>Sobre nosotros</h2>
+            <p>
+                En FrontCat&Dog Petshop, nos dedicamos a ofrecer los mejores productos para tus mascotas. Nuestro objetivo es brindar calidad y variedad en alimentos, juguetes, accesorios y más. Creemos que cada mascota merece lo mejor, y estamos aca para ayudarte a encontrarlo.
+            </p>
+            <!--gracias copilot no tenia tantas ganas de escribir jajajaj-->
+        </div>
+    </section>
+
+    <footer class="footer" id="contacto">
+        <div class="container">
+            &copy ; 2025 FrontCat&Dog Petshop Dev. by Hazi. Todos los derechos reservados.
+        </div>
+    </footer>
+</body>
+
+</html>
