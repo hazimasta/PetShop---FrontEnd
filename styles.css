@@ -7,7 +7,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: #333;
-    background-color: #f8f8f8;
+    background-color: #F2EEE9;
     line-height: 1.6;
 }
 
@@ -32,7 +32,7 @@ body {
 .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #4CAF50;
+    color: #00e77b;
 }
 
 .nav ul {
@@ -48,11 +48,11 @@ body {
 }
 
 .nav a:hover {
-    color: #4CAF50;
+    color: #00e77b;
 }
 
 /* cartelito de ES-EN */
-.lenguaje select {
+.language select {
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -76,7 +76,7 @@ body {
 
 .hero p {
     font-size: 20px;
-    color: #fff;
+    color: #F2EEE9;
     margin-bottom: 30px;
     text-shadow: 1px 1px 3px rgb(0, 0, 0);
 }
@@ -84,8 +84,8 @@ body {
 .btn {
     display: inline-block;
     padding: 12px 30px;
-    background-color: #4CAF50;
-    color: #fff;
+    background-color: #00e77b;
+    color: #F2EEE9;
     border-radius: 30px;
     text-decoration: none;
     font-weight: 600;
@@ -93,19 +93,20 @@ body {
 }
 
 .btn:hover {
-    background-color: #45a049;
+    background-color: #00e77b;
 }
 
-.productos {
+.produc {
     padding: 80px 0;
-    background-color: #ffffff;
+    background-color: #F2EEE9;
     text-align: center;
 }
 
-.productos h2 {
+.produc h2 {
     margin-bottom: 50px;
     font-size: 36px;
-    color: #4CAF50;
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.308);
+    color: #00e77b;
 }
 
 .categories-grid {
@@ -116,7 +117,7 @@ body {
     margin: 0 auto;
 }
 
-.prod-card {
+.categorie-card {
     background-color: #ffffff;
     border-radius: 15px;
     padding: 20px;
@@ -124,7 +125,7 @@ body {
     box-shadow: 0 0 20px rgba(156, 156, 156, 0.603);
 }
 
-.prod-card img {
+.categorie-card img {
     width: 70%;
     height: auto;
     max-width: 400px;
@@ -133,31 +134,31 @@ body {
     object-fit: cover;
 }
 
-.prod-card p {
+.categorie-card p {
     margin-top: 15px;
     font-size: 20px;
     font-weight: 500;
     color: #333;
 }
 
-.prod-card:hover {
+.categorie-card:hover {
     transform: scale(1.05);
     background-color: #00e77b;
 }
 
-.contacto {
-    background-color: #f5f5f5;
+.contact {
+    background-color: #F2EEE9;
     padding: 50px 20px;
     text-align: center;
 }
 
-.contacto h2 {
+.contact h2 {
     font-size: 28px;
     margin-bottom: 30px;
     color: #333;
 }
 
-.formulario {
+.form {
     max-width: 600px;
     margin: 0 auto;
 }
@@ -226,7 +227,7 @@ body {
     text-align: center;
     margin-bottom: 30px;
     font-size: 36px;
-    color: #4CAF50;
+    color: #00e77b;
 }
 
 .about p {
@@ -237,10 +238,43 @@ body {
     color: #666;
 }
 
-.footer {
-    background-color: #4CAF50;
-    padding: 20px 0;
+.image-container {
+    background-color: #F2EEE9; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 50px;
+    padding-bottom: 0;
+    position: relative;
+}
+
+.image-container img {
+    max-width: 50%;
+    height: auto;
+    position: relative;
+    z-index: 2; /*para superponer*/
+    margin-bottom: -24px; 
+}
+
+.black-band {
+    background-color: #000;
+    color: white;
     text-align: center;
-    color: #ffffff;
+    padding: 40px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.footer {
+    background-color: #00e77b; 
+    padding: 30px 0;
+    text-align: center;
     font-size: 14px;
+    color: #ffffff;
+}
+
+.footer-contact {
+    font-weight: 600;
+    padding: 20px 0;
+    color: #000000;
 }
