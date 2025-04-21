@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -6,8 +7,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    color: #333;
-    background-color: #F2EEE9;
+    color: #000000;
+    background-color: #FCFDFF;
     line-height: 1.6;
 }
 
@@ -18,7 +19,7 @@ body {
 }
 
 .header {
-    background-color: #ffffff;
+    background-color: #6c788e;
     padding: 20px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -32,7 +33,7 @@ body {
 .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #00e77b;
+    color: #fcfdff;
 }
 
 .nav ul {
@@ -43,12 +44,12 @@ body {
 
 .nav a {
     text-decoration: none;
-    color: #333;
-    font-weight: 500;
+    color: #fcfdff;
+    font-weight: 900;
 }
 
 .nav a:hover {
-    color: #00e77b;
+    color: #f7d726;
 }
 
 /* cartelito de ES-EN */
@@ -60,18 +61,33 @@ body {
 
 /* princ */
 .hero {
-    background-image: url('img/backgroundpetshop.jpg');
-    background-size: cover; 
-    background-position: center; 
     padding: 100px 0;
-    text-align: center;
+    position: relative;
+}
+
+.hero .container {
+    z-index: 2;
+    position: relative;
+}
+
+.overlay {
+    background-image: url('img/backgroundheropetshop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
 }
 
 .hero h1 {
     font-size: 48px;
-    color: #00e77b;
+    color: #8CBBAC;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.322);
 }
 
 .hero p {
@@ -84,8 +100,8 @@ body {
 .btn {
     display: inline-block;
     padding: 12px 30px;
-    background-color: #00e77b;
-    color: #F2EEE9;
+    background-color: #6C788E;
+    color: #ffffff;
     border-radius: 30px;
     text-decoration: none;
     font-weight: 600;
@@ -93,12 +109,12 @@ body {
 }
 
 .btn:hover {
-    background-color: #00e77b;
+    background-color: #f7d726;
 }
 
 .produc {
     padding: 80px 0;
-    background-color: #F2EEE9;
+    background-color: #fcfdff;
     text-align: center;
 }
 
@@ -106,7 +122,7 @@ body {
     margin-bottom: 50px;
     font-size: 36px;
     text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.308);
-    color: #00e77b;
+    color: #a6aec1;
 }
 
 .categories-grid {
@@ -118,7 +134,7 @@ body {
 }
 
 .categorie-card {
-    background-color: #ffffff;
+    background-color: #cfd5e1;
     border-radius: 15px;
     padding: 20px;
     transition: transform 0.3s;
@@ -143,19 +159,24 @@ body {
 
 .categorie-card:hover {
     transform: scale(1.05);
-    background-color: #00e77b;
+    background-color: #f7d726;
 }
 
 .contact {
-    background-color: #F2EEE9;
+    background-color: #fcfdff;
     padding: 50px 20px;
     text-align: center;
+    border: 5px solid #ededf2;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(156, 156, 156, 0.603);
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 .contact h2 {
     font-size: 28px;
     margin-bottom: 30px;
-    color: #333;
+    color: #a6aec1;
 }
 
 .form {
@@ -227,7 +248,7 @@ body {
     text-align: center;
     margin-bottom: 30px;
     font-size: 36px;
-    color: #00e77b;
+    color: #a6aec1;
 }
 
 .about p {
@@ -235,11 +256,13 @@ body {
     margin: 0 auto;
     text-align: center;
     font-size: 18px;
-    color: #666;
+    color: #000000;
 }
 
+/*imagen del footer y footer*/
+
 .image-container {
-    background-color: #F2EEE9; 
+    background-color: #fcfdff; 
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -252,25 +275,25 @@ body {
     max-width: 50%;
     height: auto;
     position: relative;
-    z-index: 2; /*para superponer*/
+    z-index: 2; 
     margin-bottom: -24px; 
 }
 
 .black-band {
-    background-color: #000;
+    background-color: #a6aec1;
     color: white;
     text-align: center;
-    padding: 40px 0;
+    padding: 7px 0;
     position: relative;
     z-index: 1;
 }
 
 .footer {
-    background-color: #00e77b; 
-    padding: 30px 0;
+    background-color: #6C788E; 
+    padding: 10px 0;
     text-align: center;
     font-size: 14px;
-    color: #ffffff;
+    color: #000000;
 }
 
 .footer-contact {
